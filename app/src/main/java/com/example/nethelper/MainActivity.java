@@ -2,6 +2,7 @@ package com.example.nethelper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,7 +31,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
-private Button btn_get,btn_post;
+private Button btn_get,btn_post,btn_second;
 private TextView tv_show;
     private List<User> userlist = new ArrayList<>();
     @Override
@@ -39,6 +40,7 @@ private TextView tv_show;
         setContentView(R.layout.activity_main);
         btn_get=findViewById(R.id.btn_get);
         btn_post=findViewById(R.id.btn_post);
+        btn_second=findViewById(R.id.btn_second);
         tv_show=findViewById(R.id.tv_show);
 
         btn_get.setOnClickListener(new View.OnClickListener() {
@@ -96,5 +98,13 @@ btn_post.setOnClickListener(new View.OnClickListener() {
         });
     }
 });
+btn_second.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this,SecondActivity.class));
     }
+});
+
+    }
+
 }

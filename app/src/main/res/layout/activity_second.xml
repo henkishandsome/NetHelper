@@ -6,26 +6,33 @@
 
 
     <Button
-        android:id="@+id/btn_get"
+        android:id="@+id/btn_get2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="get访问" />
 
     <Button
-        android:id="@+id/btn_post"
+        android:id="@+id/btn_post2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="post访问" />
 
+
     <Button
-        android:id="@+id/btn_second"
+        android:id="@+id/btn_postarray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="切换接口" />
+        android:text="POST访问（返回数组）" />
 
     <TextView
-        android:id="@+id/tv_show"
+        android:id="@+id/tv_show2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
+
+    <ProgressBar
+        android:id="@+id/pBar_test"
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
